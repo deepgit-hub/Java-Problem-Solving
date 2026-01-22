@@ -16,7 +16,7 @@ class problem8
         {
             price=100;
         }
-        else if(age>=12 && age=<60)
+        else if(age>=12 && age<=60)
         {
             price=150;
         }
@@ -37,3 +37,4 @@ class problem8
 
     }
 }
+
