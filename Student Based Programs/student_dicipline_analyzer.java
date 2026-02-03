@@ -1,6 +1,6 @@
 import java.lang.System;
 import java.util.Scanner;
-class problem17
+class student_dicipline_analyzer
 {
     public static void main(String args[])
     {
