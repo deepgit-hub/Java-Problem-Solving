@@ -1,6 +1,6 @@
 import java.lang.System;
 import java.util.Scanner;
-class practice
+class problem07
 {
     public static void main(String args[])
     {
