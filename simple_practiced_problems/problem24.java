@@ -9,7 +9,7 @@ class problem24
     static void main(String args[])
     {
        Scanner scan = new Scanner(System.in);
-       System.out.print("Enter a number to fing it's Cube : ");
+       System.out.print("Enter a number to find it's Cube : ");
        int n = scan.nextInt();
        int cube = cube(n);
        System.out.print("The Cube of the entered number "+n+" is "+cube);
