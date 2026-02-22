@@ -24,7 +24,7 @@ class problem01
         practice p2 = new practice();
         System.out.println("Student 2 Details ");
         p2.name ="ChandraSekar";
-        p2.father_name="Sivasupramani";
+        p2.father_name="SivaSupramani";
         p2.age=29;
         p2.mobileno=999999;
         System.out.println("Student Name : "+p2.name);
