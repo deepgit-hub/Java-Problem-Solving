@@ -1,21 +1,26 @@
 package practice;
-class Problem05
+class Practice
 {
 	int accountnumber;
-	int accoundbalance;
+	int accountbalance;
 	String accountholdername;
 	Practice(String accountholdername,int accountnumber,int accountbalance)
 	{
 		this.accountholdername = accountholdername;
 		this.accountnumber = accountnumber;
-		this.accoundbalance=accountbalance;
+		this.accountbalance=accountbalance;
 		
 	}
 	void deposit(int amount)
 	{
 	
-		this.accoundbalance+=amount;
-		System.out.print("Cuurent Account Balance is : "+this.accoundbalance);
+		this.accountbalance+=amount;
+		System.out.print("Cuurent Account Balance is : "+this.accountbalance);
+	}
+	void display()
+	
+	{
+		System.out.print("Your Account Balance is : "+accountbalance);
 	}
 	
 	public static void main(String args[])
