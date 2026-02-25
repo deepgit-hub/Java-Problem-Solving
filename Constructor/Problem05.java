@@ -15,18 +15,20 @@ class Practice
 	{
 	
 		this.accountbalance+=amount;
-		System.out.print("Cuurent Account Balance is : "+this.accountbalance);
+		
 	}
 	void display()
 	
 	{
 		System.out.print("Your Account Balance is : "+accountbalance);
+		
 	}
 	
 	public static void main(String args[])
 	{
 		Practice p = new Practice("Deepak",748514,1000);
 		p.deposit(500);
+		p.display();
 	
 	}
 }
