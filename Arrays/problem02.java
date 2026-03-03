@@ -1,6 +1,6 @@
 import java.lang.System;
 import java.util.Scanner;
-class Problem02
+class problem02
 {
     public static void main(String args[])
     {
@@ -15,8 +15,12 @@ class Problem02
         subject[i]=scan.nextInt();
         total +=subject[i];
     }
-    int average = total/5;
-    if(average>90)
+    double average = total/5.0;
+    System.out.println("Student Name       : "+name);
+    System.out.println("Student Total Mark : "+total);
+    System.out.println("Student Average    : "+average);
+    System.out.print("  Student Grade        : ");
+    if(average>=90)
     {
         System.out.print("Grade A ");
     }
