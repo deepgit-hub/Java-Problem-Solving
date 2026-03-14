@@ -7,6 +7,7 @@ class P
     {
         JFrame f = new JFrame("Registration Form");
         f.setLayout(null);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel name = new JLabel("Name : ");
         name.setBounds(50,30,100,30);
@@ -62,9 +63,22 @@ class P
         JCheckBox language4 = new JCheckBox("Python");
         language1.setBounds(180,240,50,30);
         language2.setBounds(240,240,50,30);
-        language3.setBounds(300,240,50,30);
-        language4.setBounds(360,240,70,30);
+        language3.setBounds(300,240,70,30);
+        language4.setBounds(380,240,70,30);
 
+        JButton exit = new JButton("Exit");
+        exit.setBounds(100,280,70,30);
+
+        JButton cancel = new JButton("Cancel");
+        cancel.setBounds(180,280,70,30);
+
+        JButton ok = new JButton("OK");
+        ok.setBounds(260,280,70,30);
+
+        JButton reset = new JButton("Reset");
+        reset.setBounds(360,280,70,30);
+
+        
         f.add(name);
         f.add(registration_number);
         f.add(gender);
@@ -85,6 +99,10 @@ class P
         f.add(language2);
         f.add(language3);
         f.add(language4);
+        f.add(ok);
+        f.add(reset);
+        f.add(cancel);
+        f.add(exit);
         f.setVisible(true);
         f.setSize(500,500);
     }
