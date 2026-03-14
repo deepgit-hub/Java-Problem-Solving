@@ -1,9 +1,9 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-class Problem10
+class P
 {
-    Problem10()
+    P()
     {
         JFrame f = new JFrame("Font Change");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,13 +39,34 @@ class Problem10
         JButton apply = new JButton("Apply");
         apply.setBounds(250,190,70,50);
 
+        JLabel result = new JLabel("Result");
+        result.setBounds(250,250,200,50);
+
         apply.addActionListener(new ActionListener()
         {
-            String text = textinput.getText();
+            public void actionPerformed(ActionEvent e)
+            {
+            String text = entertext.getText();
             String fontname = (String)fontbox.getSelectedItem();
             int size = Integer.parseInt((String)sizebox.getSelectedItem());
+            int style = Font.PLAIN;
+            if(bold.isSelected() && italic.isSelected())
+            {
+                style = Font.BOLD+Font.ITALIC;
+            }
+            else if(bold.isSelected())
+            {
+                style = Font.BOLD;
+            }
+            else if(italic.isSelected())
+            {
+                style = Font.ITALIC;
+            }
+            Font font = new Font(fontname,style,size);
+            result.setText(text);
+            result.setFont(font);
+            }
         });
-
         f.add(text);
         f.add(entertext);
         f.add(font);
@@ -55,11 +76,11 @@ class Problem10
         f.add(italic);
         f.add(bold);
         f.add(apply);
-
+        f.add(result);
 
     }
     public static void main(String args[])
     {
-        new Problem10();
+        new P();
     }
 }
