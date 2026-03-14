@@ -78,7 +78,37 @@ class P
         JButton reset = new JButton("Reset");
         reset.setBounds(360,280,70,30);
 
-        
+        ok.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                JOptionPane.showMessageDialog(f,"Your Application was summited successfully");
+            }
+        });
+        reset.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                nameinput.setText("");
+                registration_numberinput.setText("");
+                dateofbirth.setText("");
+                enterage.setText("");
+            }
+        });
+        cancel.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                System.exit(0);
+            }
+        });
+        exit.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                System.exit(0);
+            }
+        });
         f.add(name);
         f.add(registration_number);
         f.add(gender);
