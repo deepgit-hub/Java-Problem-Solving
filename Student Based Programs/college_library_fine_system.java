@@ -28,6 +28,7 @@ class college_library_fine_system
             else if(delay[i]>10)
             {
                 warning+=1;
+                fine[i] +=delay[i] * 50;
             }
         }
         highest_fine = fine[0];
