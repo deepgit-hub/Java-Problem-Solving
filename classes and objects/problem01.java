@@ -8,7 +8,7 @@ class problem01
     int mobileno = 0;
     public static void main(String args[])
     {
-        practice p1 = new practice();
+        problem01 p1 = new problem01);
         p1.name ="Deepak";
         p1.father_name="Loganatham";
         p1.age=19;
@@ -21,7 +21,7 @@ class problem01
         System.out.println();
        
        
-        practice p2 = new practice();
+        problem01 p2 = new problem01();
         System.out.println("Student 2 Details ");
         p2.name ="ChandraSekar";
         p2.father_name="SivaSupramani";
