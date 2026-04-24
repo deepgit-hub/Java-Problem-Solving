@@ -8,7 +8,7 @@ class problem01
     int mobileno = 0;
     public static void main(String args[])
     {
-        problem01 p1 = new problem01);
+        problem01 p1 = new problem01();
         p1.name ="Deepak";
         p1.father_name="Loganatham";
         p1.age=19;
