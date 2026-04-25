@@ -5,7 +5,7 @@ class Problem06
 	int accountnumber;
 	int accountbalance;
 	String accountholdername;
-	Practice(String accountholdername,int accountnumber,int accountbalance)
+	Problem06(String accountholdername,int accountnumber,int accountbalance)
 	{
 		this.accountholdername = accountholdername;
 		this.accountnumber = accountnumber;
@@ -39,7 +39,7 @@ class Problem06
 	public static void main(String args[])
 	{
 		Scanner scan = new Scanner(System.in);
-		Practice p = new Practice("Deepak",748514,1000);
+		Problem06 p = new Problem06("Deepak",748514,1000);
 		System.out.print("Enter amount for deposit : ");
 		int amount = scan.nextInt();
 		if(amount<0)
