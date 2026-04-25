@@ -1,13 +1,13 @@
 package practice;
-class Problem
+class Problem04
 {
 	int price;
 	String brand;
-	Practice(String brand)
+	Problem04(String brand)
 	{
 		this.brand=brand;
 	}
-	Practice(String brand,int price)
+	Problem04(String brand,int price)
 	{
 		this.brand=brand;
 		this.price=price;
@@ -19,8 +19,8 @@ class Problem
 	}
 	public static void main(String args[])
 	{
-		Practice c1= new Practice("BMW");
-		Practice c2= new Practice("Porchea",110000000);
+		Problem04 c1= new Problem04("BMW");
+		Problem04 c2= new Problem04("Porchea",110000000);
 		c1.display();
 		c2.display();
 		
