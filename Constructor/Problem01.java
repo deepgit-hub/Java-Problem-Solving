@@ -3,7 +3,7 @@ package practice;
 public class Problem01 {
 	int age;
 	String name;
-	Practice(String name,int age)
+	Problem01(String name,int age)
 	{
 		this.age=age;
 		this.name =name;
@@ -11,8 +11,8 @@ public class Problem01 {
 		System.out.println("The Student Age is : "+this.age);
 	}
 	public static void main(String[] args) {
-	Practice p1 = new Practice("Deepak",19);
-	Practice p2 = new Practice("Chandra Sekhar",65);
+	Problem01 p1 = new Problem01("Deepak",19);
+	Problem01 p2 = new Problem01("Chandra Sekhar",65);
 	
 		
 	}
