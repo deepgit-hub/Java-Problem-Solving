@@ -1,10 +1,10 @@
 package practice;
-class Practice
+class Problem05
 {
 	int accountnumber;
 	int accountbalance;
 	String accountholdername;
-	Practice(String accountholdername,int accountnumber,int accountbalance)
+	Problem05(String accountholdername,int accountnumber,int accountbalance)
 	{
 		this.accountholdername = accountholdername;
 		this.accountnumber = accountnumber;
@@ -26,7 +26,7 @@ class Practice
 	
 	public static void main(String args[])
 	{
-		Practice p = new Practice("Deepak",748514,1000);
+		Problem05 p = new Problem05("Deepak",748514,1000);
 		p.deposit(500);
 		p.display();
 	
