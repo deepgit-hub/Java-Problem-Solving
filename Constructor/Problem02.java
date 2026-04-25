@@ -15,8 +15,8 @@ public class Problem02 {
 		System.out.println("The Student Age is : "+this.age);
 	}
 	public static void main(String[] args) {
-	Practice p1 = new Practice("Deepak",19);
-	Practice p2 = new Practice("Chandra Sekhar",65);
+	Problem02 p1 = new Problem02("Deepak",19);
+	Problem02 p2 = new Problem02("Chandra Sekhar",65);
 	p1.display();
 	p2.display();
 	
