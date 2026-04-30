@@ -6,7 +6,7 @@ class problem01
     {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter your age :");
-        int age = scan.nextInt();
+        int age = can.nextInt();
         System.out.print("Enter 0 if you have i'd or 1 if you don't have i'd");
         int id = scan.nextInt();
         System.out.print("Enter your experience : ");
